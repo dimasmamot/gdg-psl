@@ -9,7 +9,7 @@ def main(script) {
     ansiColor('xterm') {
         stage('Git Checkout') {
             println("==================Cloning Code==================")
-            git branch: "${branch_name}" url: "https://github.com/dimasmamot/${JOB_NAME}.git"
+            git branch: "${branch_name}", url: "https://github.com/dimasmamot/${JOB_NAME}.git"
             println("==================Success Cloning Code==================")
         }
         stage('Building') {
